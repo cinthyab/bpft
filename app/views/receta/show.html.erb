@@ -1,0 +1,37 @@
+<table 
+align= "center" 
+width= "800"
+>
+  <p id="notice"><%= notice %></p>
+
+  <%= link_to 'Categoría', categoria_path(@receta) %><br/>
+    <!-- ¿? Para ver la categoría a la que pertenece la receta: 
+      action=> 'index', controller => 'categorium'
+      categorium_receta
+      receta#index
+      categoria/:categorium_id/receta -->
+
+  <% if @recetum.foto? %>
+    <%= link_to (image_tag (@recetum.foto.url(:small))), @recetum.foto.url %><br/>
+  <% end %>
+
+  <h3><%= @recetum.titulo %></h3></br>
+  <%= @recetum.descripcion %></br>
+  <b>Ingredientes:</b></br>
+  <%= @recetum.ingredientes %></br>
+  <b>Instrucciones:</b></br>
+  <%= @recetum.instrucciones %></br>
+
+</table>
+
+
+<table
+align= "center"
+width= "1000">
+  <td>
+    <div style="float: right; clear: left; padding: 10px;">
+    <%= link_to (image_tag ("/system/receta/fotos/lapiz.svg")), edit_recetum_path(@recetum) %> 
+    <%= link_to (image_tag ("/system/receta/fotos/libro.svg")), receta_path %> 
+  </td>
+
+</table>

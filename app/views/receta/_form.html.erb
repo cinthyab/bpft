@@ -1,0 +1,27 @@
+<%= simple_form_for @recetum, :html => { :multipart => true} do |f| %>
+  <% if @recetum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recetum.errors.count, "error") %> prohibited this recetum from being saved:</h2>
+      <ul>
+      <% @recetum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+
+  <% end %>
+
+
+  <%= f.input :titulo %>
+  <%= f.input :descripcion %>
+  <%= f.input :ingredientes %>
+  <%= f.input :instrucciones %>
+  <%= f.input :foto %>
+
+<%= f.collection_select :categorium_id, Categorium.all, :id, :nombre, :prompt => "Categoría "%>
+
+<%= link_to "Categorías", categoria_path %>
+
+
+
+<% end %>
