@@ -11,3 +11,85 @@
  *= require_self
  *= require_tree .
  */
+ .headerbox {
+	width : 1120px;
+    height : 65px;
+    background : #FCF8CD;
+    margin : 0 auto;
+    border : 1px solid #B8D8D7;
+    margin-top : 2%;
+    margin-bottom: 3%;
+    }
+
+.box {
+	width : 1000px;
+    height : 530px;
+    background : #FCF8CD;
+    margin : 0 auto;
+    border : 60px solid #FCF8CD;
+    margin-top : 7%;
+    padding-top : -25px;
+	}
+
+.imagen {
+	float: left;
+	width:90px;
+	max-height: 90px;
+	padding:10px;
+	border:1px solid #FCF8CD;
+	margin:0px;
+	}
+
+.titulo {
+	float: right;
+	color:#653614;
+	font-family: 'Cookie';
+	font-weight: normal;
+	text-align: left;
+	font-size: 40pt;
+	text-decoration: none;
+	width: 840px;
+	padding:5px 10px 0px 5px;
+	border:0px;
+	margin:0px;
+	}
+
+.descripcion {
+	font-family: 'Droid Sans';
+	text-align: left;
+	height: 40px;
+	color: #653614;
+	float: right;
+	width: 840px;
+	padding:15px 10px 0px 10px;
+	border:0px 5px 5px 0px solid #FCF8CD;
+	margin:0px;
+	}
+
+.sesion {
+	font-family: 'Droid Sans';
+	text-align: left;
+	height: 40px;
+	color: #653614;
+	float: right;
+	width: 840px;
+	padding:15px 10px 0px 10px;
+	border:0px 5px 5px 0px solid #FCF8CD;
+	margin:0px;
+	}
+
+.logo {
+	height: 50%;
+	float: left;
+	padding:8px 6px 6px 15px;
+	border:0px solid gray;
+	margin:0px;
+	
+}
+
+
+.cerrarsesion {
+	float: right;
+	border:1px solid #FCF8CD;
+	width: 30px;
+		}

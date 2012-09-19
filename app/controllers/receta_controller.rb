@@ -1,7 +1,7 @@
 class RecetaController < ApplicationController
   # GET /receta
   # GET /receta.json
-
+before_filter :authenticate_user!
   def index
     @receta = Recetum.all
     

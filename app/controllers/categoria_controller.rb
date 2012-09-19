@@ -1,6 +1,8 @@
 class CategoriaController < ApplicationController
   # GET /categoria
   # GET /categoria.json
+
+before_filter :authenticate_user!
   def index
     @categoria = Categorium.all
 

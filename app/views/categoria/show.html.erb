@@ -1,20 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="box">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <h1><%= @categorium.nombre %></h1>
-</p>
-<h3>Recetas:</h3>  
-<ul>  
-<% @categorium.recetum.each do |recetum| %>  
-    <li><%= link_to recetum.titulo, categorium_recetum_path(@categorium,recetum) %></li>  
-<% end %>  
-</ul>  
-  
-<br />  
-<%= link_to "Agregar receta", new_categorium_recetum_path(@categorium) %>  
-<hr style="margin-top:25px;"/>  
-  
-<%= link_to (image_tag ("/system/receta/fotos/lapiz.svg")), edit_categorium_path(@categorium) %> |  
-<%= link_to 'Categorías', categoria_path %>  
+	<p>
+	  <h1><%= @categorium.nombre %></h1>
+	</p>
+	<h3>Recetas:</h3>  
+	<ul>  
+	<% @categorium.recetum.each do |recetum| %>  
+	    <li><%= link_to recetum.titulo, categorium_recetum_path(@categorium,recetum) %></li>  
+	<% end %>  
+	</ul>  
+	  
+	<br />  
+	<%= link_to "Agregar receta", new_categorium_recetum_path(@categorium) %>  
+	<hr style="margin-top:25px;"/>  
+	  
+	<%= link_to (image_tag ("/system/receta/fotos/lapiz.svg")), edit_categorium_path(@categorium) %> |  
+	<%= link_to 'Categorías', categoria_path %>  
 
-
+</div>

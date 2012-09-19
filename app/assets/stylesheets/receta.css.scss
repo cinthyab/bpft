@@ -1,3 +1,158 @@
 // Place all the styles related to the Receta controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.box {
+	width : 1000px;
+    height : 530px;
+    background : #FCF8CD;
+    margin : 0 auto;
+    border : 60px solid #FCF8CD;
+    margin-top : 7%;
+    padding-top : -25px;
+	}
+
+.imagen {
+	float: left;
+	width:90px;
+	max-height: 90px;
+	padding:10px;
+	border:1px solid #FCF8CD;
+	margin:0px;
+	}
+
+.titulo {
+	float: right;
+	color:#653614;
+	font-family: 'Cookie';
+	font-weight: normal;
+	text-align: left;
+	font-size: 40pt;
+	text-decoration: none;
+	width: 840px;
+	padding:5px 10px 0px 5px;
+	border:0px;
+	margin:0px;
+	}
+
+.descripcion {
+	font-family: 'Droid Sans';
+	text-align: left;
+	height: 40px;
+	color: #653614;
+	float: right;
+	width: 840px;
+	padding:15px 10px 0px 10px;
+	border:0px 5px 5px 0px solid #FCF8CD;
+	margin:0px;
+	}
+
+
+.ingredientes {
+	font-family: 'Droid Sans';
+	text-align: left;
+	color: #653614;
+	width: 200px;
+	height: 300px;
+	padding:20px 10px 0px 10px;
+	border:5px solid #FCF8CD;
+	margin:0px;
+	float: left;
+	overflow: hidden;
+}
+
+.instrucciones{
+	float: right;
+	font-family: 'Droid Sans';
+	text-align: left;
+	color: #653614;
+	width: 740px;
+	height: 300px;
+	padding:20px 10px 0px 10px;
+	border:5px solid #FCF8CD;
+	margin:0px;;
+	margin:0px;
+	overflow: hidden;
+	}
+
+.icons {
+	float: right;
+	padding:3px;
+	border:0px solid #FCF8CD;
+	margin:0px;
+}
+
+b{
+	font-family: 'Satisfy';
+	font-size: 14pt;
+	font-weight: lighter;
+}
+
+.nombre {
+	float: right;
+	color:#653614;
+	font-family: 'Cookie';
+	font-weight: normal;
+	text-align: left;
+	font-size: 25pt;
+	text-decoration: none;
+	height: 25px;
+	width: 859px;
+	padding:5px 10px 0px 5px;
+	border:1px solid #FCF8CD;
+	margin:0px;
+	}
+
+.indexdescripcion {
+	float: right;
+	color: #653614;
+	font-family: 'Droid Sans';
+	text-align: left;
+	height: 30px;
+	width: 846px;
+	padding:0px 10px 0px 10px;
+	border:5px solid #FCF8CD;
+	margin:0px;
+}
+
+.iconsindex {
+	float: right;
+	padding:3px;
+	border:1px solid #FCF8CD;
+	margin:0px;
+}
+
+.imagenindex {
+	float: left;
+	max-height: 90px;
+	padding:10px;
+	border:1px solid #FCF8CD;
+	margin:0px;
+	}
+
+.receta {
+border: 1px solid #FCF8CD;
+height: 80px;
+padding: 10px 0px 5px 0px;
+border: 3px;
+border-bottom: 1px solid #653614;
+}
+
+.correousuario {
+	font-family: 'Droid';
+	left:20;
+	text-align: center;
+	font-size: 12pt;
+	height: 20px;
+	color: #653614;
+	float: right;
+	width: 300px;
+	padding:10px;
+	border:0px solid gray;
+	margin:12px;
+
+	}
+
+.logotipo {
+	margin: 0px auto;
+	
+}

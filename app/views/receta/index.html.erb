@@ -1,17 +1,37 @@
+<div class="box">
 <h1>Libro de recetas</h1>
 
-<table align= "center">
 	<% @receta.each do |recetum| %>
-	  	<tr>
-	  		<td><%= link_to (image_tag (recetum.foto.url(:small))), recetum %></td>
-	  		<td><%= link_to recetum.titulo, recetum %></td>
-	  		<td><%= recetum.descripcion %></td>
-	  		<td><%= link_to (image_tag ("/system/receta/fotos/lapiz.svg")), edit_recetum_path(recetum) %></td>
-	  		<td><%= link_to (image_tag ("/system/receta/fotos/delt.svg")), recetum, method: :delete, data: { confirm: '¿Desea eliminar esta receta?' } %></td>
-	  	</tr>
-    <% end %>
-</table>
-<div align= "center">
-<%= link_to 'Nueva Receta', new_recetum_path %>
-<%= link_to 'Categoria', new_categorium_path %>
+		<div class= "receta">
+	  	
+		  	<div class="imagenindex">
+		  		<%= link_to (image_tag (recetum.foto.url(:small))), recetum %>
+		  	</div>
 
+		  	<div class="nombre">
+		  			<%= link_to recetum.titulo, recetum %>
+		  	</div></br>
+
+		  	<div class= "indexdescripcion">	
+		  		<%= recetum.descripcion %>
+		  	
+			  	<div class = "iconsindex">
+			  		<%= link_to (image_tag ("/system/receta/fotos/lapiz.svg")), edit_recetum_path(recetum) %>
+			  	</div>
+
+			  	<div class = "iconsindex">
+			  		<%= link_to (image_tag ("/system/receta/fotos/delt.svg")), recetum, method: :delete, data: { confirm: '¿Desea eliminar esta receta?' } %>
+			  	</div>
+		  	</div>
+		</div>
+
+	  	
+    <% end %>
+
+	<div class = "iconsindex">
+	<%= link_to 'Nueva Receta', new_recetum_path %>
+	</div>
+	<div class = "iconsindex">
+	<%= link_to 'Categoria', new_categorium_path %>
+	</div>
+</div>

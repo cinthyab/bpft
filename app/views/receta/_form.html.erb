@@ -21,7 +21,6 @@
 <%= f.collection_select :categorium_id, Categorium.all, :id, :nombre, :prompt => "Categoría "%>
 
 <%= link_to "Categorías", categoria_path %>
-
-
+<%= f.submit "Guardar" %>
 
 <% end %>

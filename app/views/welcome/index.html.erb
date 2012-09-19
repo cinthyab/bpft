@@ -1,19 +1,20 @@
 <html>
 
 <head>
-<%= stylesheet_link_tag "bonprofitwelcome" %>
+      <%= stylesheet_link_tag "bonprofitwelcome" %>
 </head>
 
-<body>
-	
-	<img src="http://uploadpie.com/WjGLd" alt="logo bon profit"; height='245'; width='245' class='img'; />	
-	
+<body onload="init()">
+	<div class= "logotipo">
+            <%= link_to (image_tag ("/system/receta/fotos/logotipo.svg")), welcome_index_path %>
+      </div>
+
 	<h1> bon profit </h1>
 
 	<h2> Una aplicación que te permite guardar <br />
 	y organizar tus recetas favoritas.</h2> 
-
-	<h3><%= link_to "libro de recetas", receta_path %></h3>
+      
+      <h3><%= link_to 'recetas', receta_path %></h3>
 
 </body>
 
